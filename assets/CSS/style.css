@@ -1,0 +1,483 @@
+:root {
+    --grey: rgb(98, 98, 98);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: #f7427f;
+    color: white;
+}
+
+body {
+    box-sizing: border-box;
+    /* background-image: url('../images/header-bg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    font-family: "Poppins";
+}
+
+p {
+    color: rgb(98, 98, 98);
+    font-size: 15px;
+
+}
+
+/* navbar start */
+nav {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 7px 12px 10px rgb(241, 241, 241);
+    position: sticky;
+    top: 0;
+    padding-left: 150px;
+    z-index: 100;
+}
+
+.head {
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+}
+
+.navbar a:hover {
+    color: #f7427f;
+    transition: .3s ease;
+}
+
+/* navbar end */
+
+/* first start */
+.first {
+    background-image: linear-gradient(rgb(255, 165, 0, 0.5), #f62e71), url(../images/header-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fhead {
+    text-align: center;
+    padding-top: 500px;
+    text-transform: capitalize;
+}
+
+.one-text {
+    font-size: 180px;
+    color: white;
+}
+
+.fbtn {
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+}
+
+.fbtn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s ease;
+}
+
+/* first end */
+
+/* second w3school starts */
+.scontainer {
+    position: relative;
+    display: flex;
+}
+
+.sbox .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.main-container .container {
+    flex: 30%;
+}
+
+.container {
+    margin: 10px;
+}
+
+.second {
+    margin: 80px 0;
+    z-index: 0;
+}
+
+.second h2,
+p {
+    text-align: center;
+}
+
+.scontainer {
+    margin: 20px;
+    width: 30%;
+}
+
+.scontainer:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* second w3school ends */
+
+
+
+/* third start */
+.third {
+    background-color: white;
+    display: flex;
+}
+
+.image {
+    flex: 50%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.info {
+    flex: 50%;
+    justify-content: flex-end;
+    align-content: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 90px;
+}
+
+.info h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2em !important;
+
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.tbtn {
+    background-color: transparent;
+    width: 15rem;
+    color: white;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+    transition: all 0.3s ease 0s;
+}
+
+.tbtn:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* third end */
+
+/* fourth starts */
+.fourth {
+    background-color: #fff;
+}
+
+.fhead h1 {
+    font-size: 30px;
+    margin: 20px auto;
+}
+
+.fhead p {
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.fcard {
+    flex: 20%;
+    padding: 30px;
+}
+
+.fcard p {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    margin: 18px 0;
+}
+
+.fcard i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.fcard i:hover {
+    background: linear-gradient(to top, #ed477e 0%, #f1904b 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s ease-in;
+}
+
+.fhead {
+    padding-top: 60px;
+}
+
+/* fourth ends */
+
+/* fifth starts */
+.fimages {
+    display: flex;
+    margin: 150px 0;
+}
+
+.fimages img {
+    height: 240px;
+    width: 240px;
+}
+
+/* fifth ends */
+
+/* sixth starts */
+.sixth {
+    margin: 60px;
+    box-shadow: 10px 10px 9px rgb(221, 221, 221);
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+}
+
+.shead {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shead h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.sflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.sone input,
+select {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 4px;
+    width: 200px;
+
+}
+
+input[type=text]:focus {
+    border: 1px solid #555eff;
+}
+
+textarea {
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.f-btn {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    margin: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.f-btn:hover {
+    color: black
+}
+
+/* sixth ends */
+
+/* seventh starts */
+.seventh {
+    padding: 70px 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sevbox {
+    flex: 30%;
+    text-align: center;
+}
+
+.sevbox i {
+    font-size: 30px;
+    margin: 18px;
+}
+
+.sevbox i:hover {
+    background: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s ease-in;
+}
+
+.sevbox h2,
+p {
+    line-height: 1.5rem;
+    color: #000;
+}
+
+p {
+    padding: 3px;
+    color: var(--grey);
+}
+
+
+/* seventh ends */
+
+/* footer starts*/
+
+.footer {
+    background-color: #222;
+    width: 100%;
+    height: 400px;
+}
+
+.fcontainer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.fbox img {
+    height: 50px;
+    width: 50px;
+}
+
+.fbox h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+}
+
+.fbox {
+    flex: 20%;
+    padding: 50px;
+}
+
+.fcopy a {
+    color: #f7427f;
+    text-decoration: none;
+
+}
+
+.fcopy {
+    text-align: center;
+}
+
+.fcopy p {
+    font-size: 1.2rem;
+
+}
+
+.fbox i {
+    font-size: 22px;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.fbox i:hover {
+    background: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s ease-in;
+}
+
+.fbox input {
+    background-color: black;
+    border: none;
+    padding: 7px;
+}
+
+.fbox button {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    color: black;
+    padding: 20px;
+    background: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+}
+
+/* footer ends */
